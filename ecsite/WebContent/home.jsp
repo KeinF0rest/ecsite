@@ -4,13 +4,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="Content-Script-Type" content="text/javascript" />
-<meta http-equiv="imagetoolbar" content="no" />
-<meta name="description" content="" />
-<meta name="keywords" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="Content-Style-Type" content="text/css"/>
+<meta http-equiv="Content-Script-Type" content="text/javascript"/>
+<meta http-equiv="imagetoolbar" content="no"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
 <title>Home画面</title>
+
 <style type="text/css">
 body{
 margin: 0;
@@ -66,17 +67,19 @@ text-align: center;
 </div>
 <div id="main">
 	<div id="top">
-	<p>Home</p>
+		<p>Home</p>
 	</div>
 	<div id="text-center">
 		<s:form action="HomeAction">
 			<s:submit value="商品購入"/>
 		</s:form>
-		<s:if test="#session. login_user_id != null">
-			<p>ログアウトする場合は
-				<a href='<s:url action="LogoutAction" />'>こちら</a>
-			</p>
-		</s:if>
+		<s:if test="#session.login_user_id != null">
+     	<p>ログアウトする場合は
+		<a href='<s:url action="LogoutAction" />'>こちら</a>
+		</p>
+ 		</s:if>
+
+
 	</div>
 </div>
 <div id="footer">

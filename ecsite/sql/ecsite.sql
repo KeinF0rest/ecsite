@@ -1,8 +1,8 @@
 set names utf8;
 set foreign_key_checks=0;
-drop databases if exists ecsite;
-create databases if not exists ecsite;
-use ecsite;
+drop database if exists ecsite1;
+create database if not exists ecsite1;
+use ecsite1;
 
 drop table if exists login_user_transaction;
 
@@ -37,4 +37,5 @@ delete_date datetime
 );
 
 INSERT INTO item_info_transaction(item_name, item_price, item_stock) VALUES("ノートBook", 100, 50);
-INSERT INTO login_user_transaction(login_id, login_pass, user_name) VALUES("diworks", "diworks01", "test")；
+
+INSERT INTO login_user_transaction(login_id, login_pass, user_name) VALUES("diworks", "diworks01", "test");
