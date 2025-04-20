@@ -75,7 +75,7 @@ text-align: center;
 		</s:form>
 		<s:if test="#session.login_user_id != null">
      	<p>ログアウトする場合は
-		<a href='<s:url action="LogoutAction" />'>こちら</a>
+		<a href='<s:url action="LogoutAction"/>'>こちら</a>
 		</p>
  		</s:if>
 
