@@ -72,9 +72,6 @@ clear: both;
  <s:submit value="ログイン"/>
  </s:form>
  <br/>
-次へ続きます。
-login.jspの作成
-前の続きです。
 </div>
  </div>
  <div id="text-link">
